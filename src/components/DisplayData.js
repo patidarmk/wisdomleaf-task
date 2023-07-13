@@ -76,8 +76,8 @@ export const DisplayData = ({
       <br />
       <h2>{branch}</h2>
      <Form.Group className="d-flex align-items-center" style={{width:"20rem"}}>
-        <Form.Label className="m-2">
-          <h5>Search :</h5>
+        <Form.Label  style={{fontSize:"18px"} className="m-2">
+          Search :
         </Form.Label>
         <Form.Control
           onChange={handleDebounce((e) => {

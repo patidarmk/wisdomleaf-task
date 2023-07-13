@@ -75,16 +75,20 @@ export const DisplayData = ({
       </Nav>
       <br />
       <h2>{branch}</h2>
-      <Form.Control
-        onChange={handleDebounce((e) => {
-          console.log("searching..");
-          setSearchInput(e.target.value);
-        }, 300)}
-        className="my-3"
-        style={{ fontSize: "16px" }}
-        type="text"
-        placeholder="Search..."
-      />
+     <Form.Group className="d-flex align-items-center">
+        <Form.Label className="m-2">
+          <h5>Search :</h5>
+        </Form.Label>
+        <Form.Control
+          onChange={handleDebounce((e) => {
+            console.log("searching..");
+            setSearchInput(e.target.value);
+          }, 300)}
+          style={{ fontSize: "16px", width: "70%" }}
+          type="text"
+          placeholder="Search..."
+        />
+      </Form.Group>
       <Table striped bordered>
         <thead>
           <tr>

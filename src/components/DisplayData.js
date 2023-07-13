@@ -75,7 +75,7 @@ export const DisplayData = ({
       </Nav>
       <br />
       <h2>{branch}</h2>
-     <Form.Group className="d-flex align-items-center" style={{width:"20rem"}}>
+     <Form.Group className="d-flex align-items-center mb-2" style={{width:"20rem"}}>
         <Form.Label  style={{fontSize:"18px"}} className="m-2">
           Search :
         </Form.Label>
